@@ -1,0 +1,1 @@
+Intelligent system for managing and synchronizing inventory, sales, and orders.
