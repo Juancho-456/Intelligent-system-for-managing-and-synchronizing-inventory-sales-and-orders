@@ -42,45 +42,38 @@
             <div class="hero-text">
                 <h1>Bienvenido a Ktronix</h1>
                 <p>Los mejores productos tecnológicos al mejor precio</p>
+                <button id="search" class="btn" href='search.html' onclick="window.location.href='search.html'">
+                    <h2>BUSCAR</h2>
+                </button>
             </div>
             <div class="hero-img">
                 <img src="images/personaHero.png" alt="Una persona">    
             </div>
         </div>
     </section>
-        
-    <!-- Productos -->
-    
-    <form id="Ktronix-form">
-        <input type="text" id="Busqueda" placeholder="Ej: Mouse Gamer" class="produt">
-        <button type="submitProduct" class="btn-submitP">Buscar Productos</button>
-    </form>
-    <div id="productos" class="grid"></div>    
-    <script src="js/api.js"></script>
-
     <!-- Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>Contacto</h2>
+            <h1>Contacto</h1>
+            <div class="form-group">
+                <h2 for="name">Nombre:</h2>
+                <input type="nombre" id="name" required>
+            </div>
+            <div class="form-group">
+                <h2 for="email">Email:</h2>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <h2 for="message">Mensaje:</h2>
+                <textarea id="message" required></textarea>
+            </div>
+            <div class="submitbtn">
+                   
+                <button type="submit" class="btn">
+                    <h2>ENVIAR</h2>
+                </button>
+            </div>
             
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn-submit">Enviar</button>
-            </form>
         </div>
     </section>
 

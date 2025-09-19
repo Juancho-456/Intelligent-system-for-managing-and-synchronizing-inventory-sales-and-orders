@@ -104,6 +104,7 @@ body {
 .hero {
     background: #004995;
     padding: 5rem 0;
+    box-shadow: var(--box-shadow);
 }
 
 .hero .container{
@@ -132,29 +133,79 @@ body {
   height: auto;
 }
 
-.grid { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, 200px); 
-    gap: 20px; 
-}
-
-.grid .card { 
-    border: 1px solid #ccc; 
-    padding: 10px; 
-    border-radius: 6px; 
-    text-align: center; 
-}
-.grid .img { 
-    max-width: 30%; 
-    height: auto; 
-}
-.grid .label { 
-    font-size: 1em; 
-    margin: 10px 0 0; 
+.hero.container.hero-text h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 25px;
+    display: block;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+/* Contacto */
+.contact {
+    padding: 3rem 0;
+    background-color: #004995;
+}
+
+.contact h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffff;
+    font-size: 60px;
+}
+.contact .container{
+    max-width: 500px;
+    margin: auto;
+
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    color: #ffff;
+    
+}
+.form-group h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 25px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-gray);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+
+.submitbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.btn{
+    width: 30%;
+    padding: 0.75rem;
+    background-color: white;
+    color: #680000;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 }
